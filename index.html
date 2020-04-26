@@ -13,12 +13,12 @@
 </head>
 
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <!-- navbar-dark bg-dark -->
         <div class="container">
             <div class="navbar-header">
-                <a id="mode" class="navbar-brand nav-link"><i id="mode-logo" class="fas fa-adjust fa-2x"></i>
+                <a id="mode" class="navbar-brand nav-link"><i id="mode-logo" class="fas fa-moon fa-2x"></i>
                     <!-- <i class="far fa-moon"></i> --></a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -50,13 +50,13 @@
         </div>
     </nav>
     <div id="home" class="container">
-        <h1>Hi I'm Lakshay</h1>
-        <i class="fas fa-code fa-5x"></i>
-        <h1>A Web Developer</h1>
+        <h1 class="h1-light">Hi I'm Lakshay</h1>
+        <i class="center-logo fas fa-code fa-5x"></i>
+        <h1 class="h1-light">A Web Developer</h1>
     </div>
-    <hr>
+    <hr class="hr-white">
     <div id="about" class="container">
-        <h1>About Me</h1>
+        <h1 class="h1-light">---- About Me ----</h1>
         <h3>Who am I ?</h3>
         <p>My name is Lakshay Batra. I am currently pursuing my Btech. in Computer Science from University Institute of
             Engineering and Technology, Kurukshetra University.</p>
@@ -70,79 +70,106 @@
         <p>I am a Student and a Web Developer. I am learning more technologies to get a depth in Web Development. I work
             for internships as and when I get time. Also working as a Web Developer Intern in INIESTA Web Tech.</p>
     </div>
-    <hr>
+    <hr class="hr-white">
     <div id="skills">
-        <h1>Skills</h1>
-        <div class="row justify-content-md-center text-center">
-            <div class="col-md-4 d-flex flex-column justify-content-center">
-                <h3><i class="fab fa-html5"></i> HTML</h3>
+        <h1 class="h1-light">---- Skills ----</h1>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-6 text-left">
+                    <h3><i class="fab fa-html5"></i> HTML</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3><i class="fab fa-css3-alt"></i> CSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3><i class="fab fa-js-square"></i> Javascript</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3><i class="fab fa-bootstrap"></i> Bootstrap</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
 
-                <h3><i class="fab fa-css3-alt"></i> CSS</h3>
-
-                <h3><i class="fab fa-js-square"></i> Javascript</h3>
-
-                <h3><i class="fab fa-bootstrap"></i> Bootstrap</h3>
-
-            </div>
-            <div class="col-md-4 flex-column">
-                <h3>jQuery</h3>
-
-                <h3><i class="fab fa-node-js"></i> Node.js</h3>
-
-                <h3>Express.js</h3>
-
-                <h3><i class="fab fa-envira"></i> MongoDB</h3>
-
+                    <h3>jQuery</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3><i class="fab fa-node-js"></i> Node.js</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3>Express.js</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3><i class="fab fa-envira"></i> MongoDB</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <hr>
+    <hr class="hr-white">
     <div id="blogs" class="container">
-        <h1>Blogs</h1>
+        <h1 class="h1-light">---- Blogs ----</h1>
         <p>Watch this space for my future blogs.</p>
 
     </div>
-    <hr>
+    <hr class="hr-white">
     <div id="projects">
-        <h1>Projects</h1>
-        <div class="margin-0 row justify-content-md-center">
-            <div class="col-md-4">
-                <a href="https://utilitywithfun.netlify.app/">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/utility-fun.jpg" class="card-img-top" alt="Utility with fun">
+        <h1 class="h1-light">---- Projects ----</h1>
+
+        <div class="container text-dark">
+            <div class="card-deck">
+
+                <div class="card">
+                    <img src="images/utility-fun.png" class="card-img-top" alt="Utility with fun">
                     <div class="card-body">
-                        <h4><i class="fab fa-uniregistry"></i>tility and <i class="fab fa-foursquare"></i>un</h4>
+                        <h5 class="card-title"><i class="fab fa-uniregistry"></i>tility and <i
+                                class="fab fa-foursquare"></i>un</h5>
                         <p class="card-text">Web app to solve your daily simple problems.</p>
+                        <p class="card-text"> <a class="btn btn-info" href="https://utilitywithfun.netlify.app/">Go To
+                                Website</a></p>
                     </div>
                 </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="https://your-dailyjournal.herokuapp.com/">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/daily-journal.jpg" class="card-img-top" alt="Daily journal">
-                        <div class="card-body">
-                            <h4><i class="fab fa-dyalog"></i>aily Journal</h4>
-                            <p class="card-text">Web app to save your daily journal at a single place.</p>
-                        </div>
+
+                <div class="card">
+                    <img src="images/daily-journal.png" class="card-img-top" alt="Daily journal">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fab fa-dyalog"></i>aily Journal</h5>
+                        <p class="card-text">Web app to save your daily journal at a single place.</p>
+                        <p class="card-text"><a class="btn btn-info" href="https://your-dailyjournal.herokuapp.com/">Go
+                                To Website</a></p>
                     </div>
-                    </a>
+                </div>
+
             </div>
         </div>
     </div>
-    
-        <div id="footer" class="bg-dark text-center">
-            <div class="footer-icons">
-                <a href="https://github.com/Lakshay-Batra"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/lakshay-batra-888726189/"><i
-                        class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://www.instagram.com/lakshay__batra/"><i class="fab fa-instagram fa-2x"></i></a>
-            </div>
-            <a href="mailto:lbatra266@gmail.com">
-                <h6>&copy; Lakshay 2020</h6>
-            </a>
+
+    <div id="footer" class="bg-secondary text-center">
+        <div class="footer-icons">
+            <a href="https://github.com/Lakshay-Batra"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/lakshay-batra-888726189/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/lakshay__batra/"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
-    
+        <a href="mailto:lbatra266@gmail.com">
+            <h6>&copy; Lakshay 2020</h6>
+        </a>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

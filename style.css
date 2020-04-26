@@ -1,10 +1,11 @@
 html, body {
     min-height: 100%;
     font-family: 'Ubuntu', sans-serif;
+    text-align: center;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
     text-align: center;
     line-height: 2;
 }
@@ -43,19 +44,13 @@ hr {
 #skills .col-md-4 {
     padding:0;
 }
-#projects a {
-    color: black;
-}
-#projects a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
 .margin-0 {
     margin: 0;
 }
 #projects .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 2% 0 0 0;
+    margin-top: 2%;
+   
 }
 #projects .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
