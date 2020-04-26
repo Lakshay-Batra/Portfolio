@@ -1,0 +1,78 @@
+html, body {
+    min-height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 2;
+}
+
+hr {
+    border: 1px solid;
+    width: 90%;
+}
+
+.hr-white {
+    border: 1px solid white;
+}
+
+#mode {
+    cursor: pointer;
+}
+
+#mode:hover {
+    text-shadow: 1px 1px 2px grey;
+}
+
+#home {
+    text-align: center;
+    padding: 5% 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#about,#skills,#blogs,#projects{
+    padding: 5% 2%;
+}
+.progress {
+    margin-bottom: 2%;
+}
+#skills .col-md-4 {
+    padding:0;
+}
+#projects a {
+    color: black;
+}
+#projects a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.margin-0 {
+    margin: 0;
+}
+#projects .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2% 0 0 0;
+}
+#projects .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+#footer a {
+    color: white;
+}
+#footer {
+    padding: 2% 1%;
+    margin-bottom: 0;
+}
