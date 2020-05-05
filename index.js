@@ -6,5 +6,4 @@ $("#mode").on("click", () => {
     $("h1").toggleClass("h1-light title-background");
     $(".center-logo").toggleClass("text-secondary");
     $("#footer").toggleClass("bg-dark bg-secondary");
-    // $("#home .col-md-4").toggleClass("title-background");
 });
