@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshay</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/18dd5346aa.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <!-- navbar-dark bg-dark -->
+        <div class="container">
+            <div class="navbar-header">
+                <a id="mode" class="navbar-brand nav-link"><i id="mode-logo" class="fas fa-moon fa-2x"></i>
+                    <!-- <i class="far fa-adjust"></i> --></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------------------------Blog----------------------------------------------------->
+    <div class="container mt-2">
+        <h1 class="h1-light">---- HTML File Paths ----</h1>
+        <br>
+        <div class="text-left">
+            <h5><i class="far fa-hand-point-right"></i>&ensp;An HTML file path is used to specify the locationof a file
+                in a website's project folder. These file paths act as an address of the file for web browser when it
+                renders the webpage on the screen. The <span class="example text-dark bg-light px-2 mr-1"> src </span> or <span
+                    class="example text-dark bg-light px-2 mr-1"> href </span> attribute requires a value that links any
+                external file to HTML file.
+                <br><br>
+                We can link various resources in our HTML file with the
+                help of HTML file paths, such as:
+                <br>
+                <ul>
+                    <li>Images</li>
+                    <li>CSS files</li>
+                    <li>JS files</li>
+                    <li>Videos</li>
+                    <li>Some other HTML documents, etc.</li>
+                </ul>
+                There are two types of file paths:
+                <ol>
+                    <li>Absolute File Paths</li>
+                    <li>Relative File Paths</li>
+                </ol>
+            </h5><br>
+            <h3>Absolute File Paths</h3>
+            <hr class="hr-white" style="width: 100%;">
+            <h5><i class="far fa-hand-point-right"></i>&ensp;Absolute File Path specifies full URL to an image or a
+                file.
+                <br><br>
+                Example: <span class="example text-dark bg-light p-2 mr-1">
+                    <<span>img src="https://www.photo-bucket.com/images/picture1.jpg" alt="Book">
+                </span></span>
+            </h5>
+            <br>
+            <h3>Relative File Paths</h3>
+            <hr class="hr-white" style="width: 100%;">
+            <h5><i class="far fa-hand-point-right"></i>&ensp;Relative File Path refers to a file path relative to the
+                current page or directory you are in. Some examples and cases which will let you understand this concept
+                are mentioned below.
+                <br><br>
+                <ol>
+                    <li>When image or some other file is located in the current working directory.
+                        <br><br>
+                        Example: <span class="example text-dark bg-light p-2 mr-1">
+                            <<span>img src="picture1.jpg" alt="Book"></span>
+                        </span>
+                    </li><br>
+                    <li>When image or some other file is located in images or some other folder in the current working directory.
+                        <br><br>
+                        Example: <span class="example text-dark bg-light p-2 mr-1">
+                            <<span>img src="images/picture1.jpg" alt="Book"></span>
+                        </span>
+                    </li><br>
+                    <li>When image or some other file is located at the root of the current project.
+                        <br><br>
+                        Example: <span class="example text-dark bg-light p-2 mr-1">
+                            <<span>img src="/picture1.jpg" alt="Book"></span>
+                        </span>
+                    </li><br>
+                    <li>When image or some other file is located in images or some other folder in the root of the current project.
+                        <br><br>
+                        Example: <span class="example text-dark bg-light p-2 mr-1">
+                            <<span>img src="/images/picture1.jpg" alt="Book"></span>
+                        </span>
+                    </li><br>
+                    <li>When image or some other file is located in a folder(let say images folder) one level above the current folder.
+                        <br><br>
+                        Example: <span class="example text-dark bg-light p-2 mr-1">
+                            <<span>img src="../images/picture1.jpg" alt="Book"></span>
+                        </span>
+                    </li><br>
+                </ol>
+            </h5>
+        </div>
+    </div>
+    <!--------------------------------------------------Blog----------------------------------------------------->
+
+    <div id="footer" class="bg-secondary text-center">
+        <div class="footer-icons">
+            <a href="https://github.com/Lakshay-Batra"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/lakshay-batra-888726189/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/lakshay__batra/"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+        <a href="mailto:lbatra266@gmail.com">
+            <h6>&copy; Lakshay 2020</h6>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

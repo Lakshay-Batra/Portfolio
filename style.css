@@ -89,3 +89,7 @@ p {
         justify-content: space-between;
     }
 }
+
+.example {
+    border-radius: 20px;
+}
