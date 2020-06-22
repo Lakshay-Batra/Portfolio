@@ -1,0 +1,39 @@
+img {
+    border-radius: 10px;
+}
+
+.white-border {
+    border: 3px solid white;
+}
+
+.black-border {
+    border: 3px solid black;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.fork-icon {
+    width: 60%;
+}
+
+.after-fork {
+    width: 60%;
+    height: 50%;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: large;
+    }
+
+    .fork-icon {
+        width: 80%;
+    }
+
+    .after-fork {
+        width: 80%;
+        height: 80%;
+    }
+}

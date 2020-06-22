@@ -8,22 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forking.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/18dd5346aa.js" crossorigin="anonymous"></script>
-
-    <style>
-        img {
-            border-radius: 10px;
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: large;
-            }
-            .fork-icon {
-                width: 80%;
-            }
-        }
-    </style>
 
 </head>
 
@@ -54,17 +41,80 @@
         <h1 class="h1-light">---- Fork a repo - GitHub ----</h1>
         <br>
         <div class="text-left">
-            <h5><i class="far fa-hand-point-right"></i>&ensp;If you want to contribute to someone's repo on thier GitHub
-                or want to contribute to open source then you must know the concept of forking. It is different from Cloning</h5><br>
+            <h5>
+                <i class="far fa-hand-point-right"></i>&ensp;If you want to contribute to someone's repo on thier GitHub
+                or want to contribute to open source then you must know the concept of forking. It is different from
+                Cloning
+            </h5>
+            <p>Prerequisites: basic knowledge of git and a GitHub account.</p>    
+            <br>
             <h3>Follow steps below to achieve end result</h3>
             <hr class="hr-white" style="width: 100%;">
             <div>
                 <ol>
                     <li>
-                        Open the repo you want to contribute to and click on fork option on the top right corner.
-                        <br>
-                        <br>
-                        <img class="fork-icon" src="images/fork-icon.png" alt="">
+                        <p>Open the repo you want to contribute to and click on fork option on the top right corner.</p>
+
+                        <img class="fork-icon white-border" src="images/fork-icon.png" alt="">
+                    </li>
+                    <li>
+                        <p>After forking you will be redirected to a page like this. Now you have your own version of that repo</p>
+
+                        <img class="after-fork white-border" src="images/after-fork-img.png" alt="">
+                    </li>
+                    <li>
+                        <p>
+                            To bring this repo to your local machine click on "Clone or Download" button and copy the repo url.
+                        </p>
+                        <img class="fork-icon white-border" src="images/clone-img.png" alt="">
+                    </li>
+                    <li>
+                        <p>
+                            Choose a place at your local machine where you want to clone/place this repo folder.
+                            Open git bash or any terminal of your choice inside that directory.
+                            <br>
+                            And run command <span class="example text-dark bg-light px-2 mr-1">$ git clone &lt;url&gt;</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now you will see your own copy of repo to be contributed on your local machine at the place you wanted it to be.
+                            Now you can simply perform as many changes as you want. Once done, follow steps below.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Add files to the staging area, perform a commit, and push the changes.
+                            <br>
+                            <span class="example text-dark bg-light px-2 mr-1">$ git add .</span>
+                            <br>
+                            <span class="example text-dark bg-light px-2 mr-1">$ git commit -m "Commit message"</span>
+                            <br>
+                            <span class="example text-dark bg-light px-2 mr-1">$ git push -u origin master</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Now open the forked repo on GitHub. Click on "New pull request"</p>
+                        <img class="fork-icon white-border" src="images/pull-request-btn.png" alt="">
+                    </li>
+                    <li>
+                        <p>
+                            If you don't see the parent repo from where you forked from inside "base:" then click "compare across forks".
+                        </p>
+                        <img class="after-fork white-border" src="images/pull-request-page.png" alt="">
+                    </li>
+                    <li>
+                        <p>
+                            Select the parent repo inside the "base repository:".
+                        </p>
+                        <img class="after-fork white-border" src="images/pull-request-page-2.png" alt="">
+                    </li>
+                    <li>
+                        <p>
+                            Now you are all set to open a pull request. Give it a nice title and description and "Create pull request".
+                            If maintainer likes your contribution he'll merge your pull request.
+                        </p>
+                        <img class="after-fork white-border" src="images/create-pull-request.png" alt="">
                     </li>
                 </ol>
             </div>
@@ -94,6 +144,11 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script>
+        $("#mode").on("click", () => {
+            $("img").toggleClass("white-border black-border");
+        });
+    </script>
 </body>
 
 </html>
